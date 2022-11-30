@@ -1,0 +1,20 @@
+import {
+  WITHOUT_PARAMETERS_COMMAND,
+  PIPE_SEPARATOR,
+  COMMAND_SEPARATOR,
+  PARAMETER_SEPARATOR,
+  COMMAND_SORT,
+  MULTIPLE_ARG_COMMAND
+} from '../types'
+
+export default {
+  // 无参数命令合集
+  withoutParamsCommand: WITHOUT_PARAMETERS_COMMAND,
+  // 多个参数的命令合集
+  multipleArgCommand: MULTIPLE_ARG_COMMAND,
+  // 命令排序规则
+  commandSort: COMMAND_SORT,
+  PIPE_SEPARATOR,
+  PARAMETER_SEPARATOR,
+  COMMAND_SEPARATOR
+}
