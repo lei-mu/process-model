@@ -215,7 +215,7 @@ export default class ProcessModel {
    */
   sort () {
     const model = this._model
-    const COMMAND_SORT = this._config.COMMAND_SORT
+    const COMMAND_SORT = this._config.commandSort
     model.sort((a, b) => {
       return COMMAND_SORT.indexOf(a.name) - COMMAND_SORT.indexOf(b.name)
     })
