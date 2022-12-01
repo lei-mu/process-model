@@ -1,18 +1,19 @@
 {
   "name": "process-model",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "obs,oss 等对象处理模型序列化",
   "keywords": [
     "obs",
     "oss",
     "image",
     "video",
-    "process"
+    "process",
+    "model"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "microbundle --name ProcessModel",
-    "rollup-build": "rollup -c",
+    "build:mic": "microbundle --name ProcessModel",
+    "build": "rollup -c",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "standard-version",
     "pub": "npm publish && cnpm sync obs-upload",
@@ -40,15 +41,16 @@
   "homepage": "https://github.com/lei-mu/process-model",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.7",
+    "@babel/core": "^7.20.5",
     "@babel/plugin-external-helpers": "^7.16.7",
     "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-env": "^7.20.2",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog": "^3.3.0",
